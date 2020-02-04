@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "OxyLED Utilities", "OxyLED Utilities.vbproj", "{646083A4-EB9B-4CE8-A6B2-3DED74B53A59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{646083A4-EB9B-4CE8-A6B2-3DED74B53A59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{646083A4-EB9B-4CE8-A6B2-3DED74B53A59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{646083A4-EB9B-4CE8-A6B2-3DED74B53A59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{646083A4-EB9B-4CE8-A6B2-3DED74B53A59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0DBEB8A7-E8BB-430F-897A-363666D732B3}
+	EndGlobalSection
+EndGlobal
