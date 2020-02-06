@@ -27,7 +27,7 @@ Public Class frmMain
         "Date"}
 
     Dim objApp As New Excel.Application
-    Dim objBook As Excel.Workbook = objApp.Worksbooks.add()
+    Dim objBook As Excel.Workbook = objApp.Workbooks.Add
 
     Dim RawRedLED As New List(Of String)
     Dim RawBlueLED As New List(Of String)
@@ -166,13 +166,29 @@ Public Class frmMain
     End Sub
 
     Private Sub btnExLines_Click(sender As Object, e As EventArgs) Handles btnExLines.Click
-        Dim redLEDSheet As Excel.Worksheet = CType(objBook.Sheets("Red LED"), Excel.Worksheet)
-        Dim blueLEDSheet As Excel.Worksheet = CType(objBook.Sheets("Blue LED"), Excel.Worksheet)
-        Dim redLASERSheet As Excel.Worksheet = CType(objBook.Sheets("Red LASER"), Excel.Worksheet)
+        Dim redLEDSheet As Excel.Worksheet = CType(objBook.Sheets.Add(), Excel.Worksheet)
+        Dim blueLEDSheet As Excel.Worksheet = CType(objBook.Sheets.Add(), Excel.Worksheet)
+        Dim redLASERSheet As Excel.Worksheet = CType(objBook.Sheets.Add(), Excel.Worksheet)
 
         'we want to export all lines for each sensor (1 sensor per sheet)
         'export only time, time elapsed, po2, SNR, LED Channel (0,1,2,6,13)
+        Dim currentLine As String()
+        Dim outputlist As Integer() = {0, 1, 2, 6, 13}
+        Dim currentRow As Integer = 1
 
+        'Headers
+        For Each heading In outputlist
+            redLEDSheet.Cells(1, currentRow) = oxyLEDHeadings(heading)
+            currentRow += 1
+
+        Next
+        For i = 1 To RawRedLED.Count + 1
+            currentLine = Split(RawRedLED(i), vbTab)
+            For Each heading In outputlist
+                redLEDSheet.Cells(i, currentRow) = currentLine(heading)
+                currentRow += 1
+            Next
+        Next
 
 
     End Sub
