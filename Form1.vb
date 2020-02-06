@@ -60,4 +60,34 @@ Public Class frmMain
             Return False
         End If
     End Function
+    Private Sub btnParseOxyLED_Click(sender As Object, e As EventArgs) Handles btnParseOxyLED.Click
+        Dim numSensors As Integer = 3
+        Dim RawRedLED As List(Of String)
+        Dim RawBlueLED As List(Of String)
+        Dim RawRedLASER As List(Of String)
+        Dim tempString As String() = Split(oxyLEDReader, vbCrLf)
+        Dim croppedOxyLED As List(Of String)
+        For i = 18 To tempString.Length
+            croppedOxyLED.Add(tempString(i))
+        Next
+
+        Dim chunkType As Integer = 1
+        Dim tempLine As String()
+        For i = 1 To croppedOxyLED.Count
+            tempLine = Split(croppedOxyLED(i), vbTab)
+            If (chunkType = 1) Then
+                RawRedLED.Add(croppedOxyLED(i))
+            ElseIf chunkType = 2 Then
+                RawBlueLED.Add(croppedOxyLED(i))
+            ElseIf chunkType = 3 Then
+                RawRedLASER.Add(croppedOxyLED(i))
+            End If
+
+
+        Next
+
+
+    End Sub
+
+
 End Class
