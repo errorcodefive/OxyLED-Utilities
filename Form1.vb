@@ -71,10 +71,18 @@ Public Class frmMain
             croppedOxyLED.Add(tempString(i))
         Next
 
-        Dim chunkType As Integer = 1
+        Dim chunkType As Integer = 3
         Dim tempLine As String()
         For i = 1 To croppedOxyLED.Count
             tempLine = Split(croppedOxyLED(i), vbTab)
+            If tempLine(2) = 0 Then
+                If (chunkType = 3) Then
+                    chunkType = 1
+                Else
+                    chunkType += 1
+                End If
+            End If
+
             If (chunkType = 1) Then
                 RawRedLED.Add(croppedOxyLED(i))
             ElseIf chunkType = 2 Then
@@ -82,8 +90,6 @@ Public Class frmMain
             ElseIf chunkType = 3 Then
                 RawRedLASER.Add(croppedOxyLED(i))
             End If
-
-
         Next
 
 
