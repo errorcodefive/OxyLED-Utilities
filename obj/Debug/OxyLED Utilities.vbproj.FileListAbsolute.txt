@@ -1,0 +1,11 @@
+C:\Projects\VS\OxyLED Utilities\bin\Debug\OxyLED Utilities.exe.config
+C:\Projects\VS\OxyLED Utilities\bin\Debug\OxyLED Utilities.exe
+C:\Projects\VS\OxyLED Utilities\bin\Debug\OxyLED Utilities.pdb
+C:\Projects\VS\OxyLED Utilities\bin\Debug\OxyLED Utilities.xml
+C:\Projects\VS\OxyLED Utilities\obj\Debug\OxyLED Utilities.vbprojAssemblyReference.cache
+C:\Projects\VS\OxyLED Utilities\obj\Debug\OxyLED_Utilities.frmMain.resources
+C:\Projects\VS\OxyLED Utilities\obj\Debug\OxyLED_Utilities.Resources.resources
+C:\Projects\VS\OxyLED Utilities\obj\Debug\OxyLED Utilities.vbproj.GenerateResource.cache
+C:\Projects\VS\OxyLED Utilities\obj\Debug\OxyLED Utilities.exe
+C:\Projects\VS\OxyLED Utilities\obj\Debug\OxyLED Utilities.xml
+C:\Projects\VS\OxyLED Utilities\obj\Debug\OxyLED Utilities.pdb
