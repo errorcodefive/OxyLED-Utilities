@@ -9,3 +9,4 @@ C:\Projects\VS\OxyLED Utilities\obj\Debug\OxyLED Utilities.vbproj.GenerateResour
 C:\Projects\VS\OxyLED Utilities\obj\Debug\OxyLED Utilities.exe
 C:\Projects\VS\OxyLED Utilities\obj\Debug\OxyLED Utilities.xml
 C:\Projects\VS\OxyLED Utilities\obj\Debug\OxyLED Utilities.pdb
+C:\Projects\VS\OxyLED Utilities\obj\Debug\OxyLED_Utilities.frmSensor.resources
